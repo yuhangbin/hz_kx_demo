@@ -14,9 +14,18 @@ mkdir -p hz-server
 mkdir -p kx-server
 # create idl
 
-# generate hertz code
+# generate hertz project
 cd hz-server
 hz new -idl ../idl/student_management.thrift -module hz-server
+# generate rpc client
+kitex -module hz-server ../idl/student_management.thrift
 
+
+# generate kitex project
+kitex -module kx-server -service kx-server ../idl/student_management.thrift
 
 ```
+
+
+Reference: 
+- https://github.com/cloudwego/hertz-examples/tree/main/hz_kitex_demo
