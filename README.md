@@ -22,6 +22,7 @@ kitex -module hz-server ../idl/student_management.thrift
 
 
 # generate kitex project
+cd kx-server
 kitex -module kx-server -service kx-server ../idl/student_management.thrift
 
 ```
