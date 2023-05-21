@@ -17,7 +17,7 @@ mkdir -p kx-server
 
 # generate hertz project
 cd hz-server
-hz new -idl ../idl/student_management.thrift -module hz-server
+hz new -idl ../idl/student_api.thrift -module hz-server
 # generate rpc client
 kitex -module hz-server ../idl/student_management.thrift
 
