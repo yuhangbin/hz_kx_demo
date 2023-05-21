@@ -1,5 +1,6 @@
 # HTTP Server(Hertz) <-> RPC Server(Kitex)
 
+## Init Project
 ```shell
 # install hertz
 go install github.com/cloudwego/hertz/cmd/hz@latest
